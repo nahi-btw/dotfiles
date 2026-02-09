@@ -1,0 +1,418 @@
+/* ==UserStyle==
+// @name         Tokyo Night Theme for All Websites
+// @description  Professional dark theme with Tokyo Night colors, preserves media integrity
+// @author       Your Name
+// @version      1.0.0
+// @namespace    https://github.com/yourusername
+// @license      MIT
+// @prefers-color-scheme dark
+// ==/UserStyle== */
+
+@-moz-document url-prefix("http://"), url-prefix("https://") {
+    :root {
+        --tokyo-bg: #1a1b26;
+        --tokyo-bg-alt: #16161e;
+        --tokyo-fg: #c0caf5;
+        --tokyo-fg-alt: #a9b1d6;
+        --tokyo-comment: #565f89;
+        --tokyo-blue: #7aa2f7;
+        --tokyo-cyan: #7dcfff;
+        --tokyo-green: #9ece6a;
+        --tokyo-magenta: #bb9af7;
+        --tokyo-orange: #ff9e64;
+        --tokyo-red: #f7768e;
+        --tokyo-yellow: #e0af68;
+        
+        --content-bg: var(--tokyo-bg);
+        --content-fg: var(--tokyo-fg);
+        --border-color: #292e42;
+        --shadow-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    /* Base reset - preserve media */
+    img, 
+    video,
+    iframe,
+    canvas,
+    svg,
+    picture,
+    figure,
+    [class*="image"],
+    [class*="Image"],
+    [class*="img"],
+    [class*="photo"],
+    [class*="media"],
+    [class*="player"],
+    [data-testid*="image"],
+    [aria-label*="image"],
+    [alt*="image"],
+    .thumbnail,
+    .avatar,
+    .logo,
+    .emoji,
+    .sticker,
+    .gif,
+    .media-content,
+    .video-container,
+    .youtube-player,
+    .vimeo-player,
+    .twitch-player,
+    .instagram-media {
+        filter: none !important;
+        -webkit-filter: none !important;
+        mix-blend-mode: normal !important;
+        opacity: 1 !important;
+        background-image: none !important;
+    }
+    
+    /* Preserve video controls visibility */
+    video::-webkit-media-controls-panel {
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)) !important;
+    }
+    
+    /* Preserve image borders and shadows */
+    img {
+        border-color: var(--border-color) !important;
+        box-shadow: 0 2px 8px var(--shadow-color) !important;
+    }
+    
+    /* Base theme application */
+    html, body {
+        background-color: var(--tokyo-bg) !important;
+        background-image: none !important;
+        color: var(--tokyo-fg) !important;
+        color-scheme: dark !important;
+    }
+    
+    /* Text elements */
+    body,
+    p,
+    div,
+    span,
+    h1, h2, h3, h4, h5, h6,
+    li,
+    td,
+    th,
+    label,
+    caption,
+    article,
+    section,
+    main,
+    aside,
+    header,
+    footer,
+    nav,
+    blockquote,
+    cite,
+    dfn,
+    em,
+    i,
+    strong,
+    b,
+    u,
+    small,
+    sub,
+    sup,
+    mark,
+    ins,
+    del,
+    abbr,
+    address,
+    pre,
+    code,
+    kbd,
+    samp,
+    var,
+    time,
+    data,
+    meter,
+    progress,
+    output,
+    [class*="text"],
+    [class*="Text"],
+    [class*="content"],
+    [class*="body"] {
+        background-color: transparent !important;
+        color: var(--tokyo-fg) !important;
+        border-color: var(--border-color) !important;
+        text-shadow: none !important;
+    }
+    
+    /* Links */
+    a,
+    [role="link"],
+    [class*="link"],
+    [class*="Link"] {
+        color: var(--tokyo-cyan) !important;
+        text-decoration-color: var(--tokyo-cyan) !important;
+    }
+    
+    a:hover,
+    [role="link"]:hover,
+    [class*="link"]:hover {
+        color: var(--tokyo-blue) !important;
+        text-decoration-color: var(--tokyo-blue) !important;
+    }
+    
+    a:visited,
+    [role="link"]:visited {
+        color: var(--tokyo-magenta) !important;
+    }
+    
+    /* Headings */
+    h1, h2, h3 {
+        color: var(--tokyo-blue) !important;
+    }
+    
+    h4, h5, h6 {
+        color: var(--tokyo-cyan) !important;
+    }
+    
+    /* Code elements */
+    code,
+    pre,
+    kbd,
+    samp {
+        background-color: var(--tokyo-bg-alt) !important;
+        border-color: var(--border-color) !important;
+        color: var(--tokyo-green) !important;
+    }
+    
+    /* Forms and inputs */
+    input,
+    textarea,
+    select,
+    button,
+    [role="textbox"],
+    [role="combobox"],
+    [role="listbox"],
+    [contenteditable="true"] {
+        background-color: var(--tokyo-bg-alt) !important;
+        color: var(--tokyo-fg) !important;
+        border-color: var(--border-color) !important;
+    }
+    
+    input:focus,
+    textarea:focus,
+    select:focus,
+    [role="textbox"]:focus {
+        border-color: var(--tokyo-blue) !important;
+        outline-color: var(--tokyo-blue) !important;
+        box-shadow: 0 0 0 2px rgba(122, 162, 247, 0.2) !important;
+    }
+    
+    /* Buttons */
+    button,
+    [role="button"],
+    [type="button"],
+    [type="submit"],
+    [type="reset"],
+    .btn,
+    .button {
+        background-color: var(--tokyo-blue) !important;
+        color: var(--tokyo-bg) !important;
+        border-color: var(--tokyo-blue) !important;
+    }
+    
+    button:hover,
+    [role="button"]:hover,
+    .btn:hover {
+        background-color: var(--tokyo-cyan) !important;
+        border-color: var(--tokyo-cyan) !important;
+    }
+    
+    /* Tables */
+    table,
+    th,
+    td {
+        border-color: var(--border-color) !important;
+        background-color: transparent !important;
+    }
+    
+    th {
+        background-color: rgba(38, 40, 59, 0.5) !important;
+        color: var(--tokyo-blue) !important;
+    }
+    
+    tr:nth-child(even) {
+        background-color: rgba(38, 40, 59, 0.2) !important;
+    }
+    
+    /* Selection */
+    ::selection {
+        background-color: rgba(122, 162, 247, 0.3) !important;
+        color: var(--tokyo-fg) !important;
+    }
+    
+    ::-moz-selection {
+        background-color: rgba(122, 162, 247, 0.3) !important;
+        color: var(--tokyo-fg) !important;
+    }
+    
+    /* Scrollbars */
+    ::-webkit-scrollbar {
+        width: 12px !important;
+        height: 12px !important;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: var(--tokyo-bg-alt) !important;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: var(--border-color) !important;
+        border-radius: 6px !important;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--tokyo-comment) !important;
+    }
+    
+    /* Placeholders */
+    ::placeholder,
+    ::-webkit-input-placeholder,
+    ::-moz-placeholder,
+    :-ms-input-placeholder,
+    :-moz-placeholder {
+        color: var(--tokyo-comment) !important;
+        opacity: 1 !important;
+    }
+    
+    /* Special elements */
+    blockquote {
+        border-left-color: var(--tokyo-green) !important;
+        background-color: rgba(158, 206, 106, 0.05) !important;
+    }
+    
+    hr {
+        border-color: var(--border-color) !important;
+        background-color: var(--border-color) !important;
+    }
+    
+    mark {
+        background-color: rgba(224, 175, 104, 0.2) !important;
+        color: var(--tokyo-yellow) !important;
+    }
+    
+    /* Cards and containers */
+    .card,
+    [class*="card"],
+    [class*="Card"],
+    .panel,
+    .box,
+    .container,
+    .wrapper,
+    .content-box,
+    .modal,
+    .dialog,
+    .popup,
+    .dropdown,
+    .menu,
+    .sidebar,
+    .nav,
+    .header,
+    .footer {
+        background-color: var(--tokyo-bg) !important;
+        border-color: var(--border-color) !important;
+        color: var(--tokyo-fg) !important;
+        box-shadow: 0 4px 12px var(--shadow-color) !important;
+    }
+    
+    /* Transparent overlays */
+    .overlay,
+    [class*="overlay"],
+    .backdrop,
+    .modal-backdrop {
+        background-color: rgba(0, 0, 0, 0.7) !important;
+        backdrop-filter: blur(4px) !important;
+    }
+    
+    /* Notification and alert boxes */
+    .alert,
+    .notification,
+    .message,
+    .banner,
+    [class*="alert"],
+    [class*="notification"],
+    [role="alert"],
+    [role="status"] {
+        border-color: var(--border-color) !important;
+    }
+    
+    .alert-success,
+    [class*="success"] {
+        background-color: rgba(158, 206, 106, 0.1) !important;
+        border-left-color: var(--tokyo-green) !important;
+        color: var(--tokyo-green) !important;
+    }
+    
+    .alert-error,
+    .alert-danger,
+    [class*="error"],
+    [class*="danger"] {
+        background-color: rgba(247, 118, 142, 0.1) !important;
+        border-left-color: var(--tokyo-red) !important;
+        color: var(--tokyo-red) !important;
+    }
+    
+    .alert-warning,
+    [class*="warning"] {
+        background-color: rgba(224, 175, 104, 0.1) !important;
+        border-left-color: var(--tokyo-yellow) !important;
+        color: var(--tokyo-yellow) !important;
+    }
+    
+    .alert-info,
+    [class*="info"] {
+        background-color: rgba(122, 162, 247, 0.1) !important;
+        border-left-color: var(--tokyo-blue) !important;
+        color: var(--tokyo-blue) !important;
+    }
+    
+    /* Icons - preserve color */
+    svg:not([fill]),
+    [class*="icon"] svg,
+    .material-icons,
+    .fa,
+    .fas,
+    .far,
+    .fab {
+        color: inherit !important;
+        fill: currentColor !important;
+    }
+    
+    /* Disabled states */
+    :disabled,
+    [disabled],
+    .disabled {
+        opacity: 0.5 !important;
+        filter: grayscale(0.3) !important;
+    }
+    
+    /* Focus outlines */
+    :focus-visible {
+        outline: 2px solid var(--tokyo-blue) !important;
+        outline-offset: 2px !important;
+    }
+    
+    /* Gradient text protection */
+    [class*="gradient"],
+    [style*="gradient"] {
+        background-clip: text !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: currentColor !important;
+    }
+    
+    /* Print styles */
+    @media print {
+        * {
+            background: white !important;
+            color: black !important;
+            border-color: #ccc !important;
+        }
+        
+        img, video {
+            filter: none !important;
+        }
+    }
+}

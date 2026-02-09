@@ -1,0 +1,25 @@
+general {
+    colors = false
+    interval = 2
+}
+
+order += "tztime local"
+
+tztime local {
+    format = "%H:%M:%S"
+}
+
+order += "battery BAT0"
+
+battery BAT0 {
+    format = "%status %percentage"
+    status_chr = "CHR"
+    status_bat = "BAT"
+}
+
+order += "wireless wlan0"
+
+wireless wlan0 {
+    format_up = "W: %essid"
+    format_down = "W: down"
+}
