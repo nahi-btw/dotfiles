@@ -6,14 +6,5 @@
 
 config_version: 2
 settings:
-  colors.webpage.darkmode.enabled:
-    global: true
-  editor.command:
-    global:
-    - kate
-    - -f
-    - '{file}'
-    - -c
-    - normal {line}G{column0}l
-  scrolling.smooth:
-    global: true
+  content.javascript.clipboard:
+    https://chat.deepseek.com: access-paste
