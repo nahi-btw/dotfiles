@@ -13,8 +13,8 @@ order += "battery BAT0"
 
 battery BAT0 {
     format = "%status %percentage"
-    status_chr = "CHR"
-    status_bat = "BAT"
+    status_chr = "󱊦"
+    status_bat = "󱊣"
 }
 
 order += "wireless wlan0"

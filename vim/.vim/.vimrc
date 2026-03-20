@@ -1,0 +1,1 @@
+echom "vim starter guide"

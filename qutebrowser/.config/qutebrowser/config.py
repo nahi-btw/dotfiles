@@ -156,3 +156,47 @@ c.editor.command = ['kate', '-f', '{file}', '-c', 'normal {line}G{column0}l']
 # image inversion": qutebrowser default settings.
 # Type: Bool
 c.colors.webpage.darkmode.enabled = True
+# Solarized-Dark Theme
+config.load_autoconfig()
+
+# Solarized palette
+base03  = "#002b36"
+base02  = "#073642"
+base01  = "#586e75"
+base00  = "#657b83"
+base0   = "#839496"
+base1   = "#93a1a1"
+base2   = "#eee8d5"
+base3   = "#fdf6e3"
+yellow  = "#b58900"
+orange  = "#cb4b16"
+red     = "#dc322f"
+magenta = "#d33682"
+violet  = "#6c71c4"
+blue    = "#268bd2"
+cyan    = "#2aa198"
+green   = "#859900"
+
+# UI colors
+c.colors.completion.fg = base0
+c.colors.completion.odd.bg = base03
+c.colors.completion.even.bg = base02
+c.colors.completion.category.bg = base02
+
+c.colors.statusbar.normal.bg = base03
+c.colors.statusbar.insert.bg = blue
+c.colors.statusbar.command.bg = base02
+
+c.colors.tabs.bar.bg = base03
+c.colors.tabs.selected.even.bg = base01
+c.colors.tabs.selected.odd.bg = base01
+c.colors.tabs.even.bg = base02
+c.colors.tabs.odd.bg = base03
+
+# Web dark mode
+c.colors.webpage.darkmode.enabled = True
+c.colors.webpage.darkmode.policy.images = "smart"
+# Fonts to be Nerd font
+c.fonts.default_family = "JetBrains Mono Nerd Font"
+# Set size
+c.fonts.default_size = "10pt"

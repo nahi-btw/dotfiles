@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/nahi-btw/.vim'
+let g:netrw_dirhist_5='/home/nahi-btw'
+let g:netrw_dirhist_4='/home/nahi-btw/.vim'
+let g:netrw_dirhist_3='/home/nahi-btw'
+let g:netrw_dirhist_2='/home/nahi-btw/.config'
+let g:netrw_dirhist_1='/home/nahi-btw/.config/picom'
+let g:netrw_dirhist_0='/home/nahi-btw/.vim'
+let g:netrw_dirhist_9='/home/nahi-btw/.config/picom'
+let g:netrw_dirhist_8='/home/nahi-btw/.config/Pinta'
+let g:netrw_dirhist_7='/home/nahi-btw/.config'
