@@ -20,4 +20,6 @@ call s:ensure('lifepillar/vim-solarized8')
 call s:ensure('altercation/vim-colors-solarized')
 call s:ensure('itchyny/lightline.vim')
 call s:ensure('mhinz/vim-startify')
-
+call s:ensure('nordtheme/vim')
+call s:ensure('jiangmiao/auto-pairs')
+call s:ensure('vimwiki/vimwiki')
